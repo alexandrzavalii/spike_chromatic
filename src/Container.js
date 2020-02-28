@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "./Image";
 
 
 const imgSrc = [
@@ -8,7 +9,14 @@ const imgSrc = [
 ]
 
 const Container  = () => {
-    return (
-        <Img />
-    )
+    const imgUrl = "https://media.giphy.com/media/xT9IgzUuC5Ss6ZnTEs/source.gif";
+
+    const handleClick = () => {
+        alert("CLICKED ME")
+    }
+
+    return <Image src={imgUrl} handleChangeImage={handleClick} />
 }
+
+
+export default Container;
